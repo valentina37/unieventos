@@ -2,9 +2,9 @@
     class Conexion {
 
         // "Credenciales" de conexión
-        public $servidor = 'localhost';
-        public $usuario = 'root';
-        public $password = '';
+        public $servidor = 'unieventos.chyqgm60qwri.us-east-1.rds.amazonaws.com';
+        public $usuario = 'admin';
+        public $password = 'jodahezo27?';
         public $database = 'unieventos';
         public $port = 3306;
         // 
