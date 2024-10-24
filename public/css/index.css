@@ -1,0 +1,352 @@
+/* General Body Settings */
+body {
+    font-family: "Dosis", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #6a11cb, #6a11cb);
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navbar Customization */
+.fondoNavbar {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffca28;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Table Styling */
+.table {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.table th {
+    background-color: #758299;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f5ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Buttons Styling */
+.btn-purple {
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(106, 17, 203, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #533fb5;
+    box-shadow: 0 6px 15px rgba(106, 17, 203, 0.6);
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    background-color: #6a11cb;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Inputs */
+input[type="text"], input[type="email"] {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Form Buttons */
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+}
+
+/* Enhancing Mobile Experience */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 40px 20px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Navbar */
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* Buttons */
+    .btn-purple {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    /* Form Modal */
+    .modal-content {
+        padding: 20px;
+    }
+
+    /* Responsive Table */
+    .table-responsive-sm {
+        overflow-x: auto;
+    }
+
+    .table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-radius: 10px;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #6a11cb;
+        flex-basis: 30%;
+    }
+
+    /* Reducing padding for buttons on smaller screens */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Additional Small Screen Enhancements */
+@media (max-width: 780px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-purple {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    /* Modal form adjustments */
+    .modal-body {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    .table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Make each row take full width */
+    .table tr {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 8px 5px;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #6a11cb;
+    }
+
+    /* Button adjustments */
+    .btn-purple {
+        font-size: 1rem;
+        padding: 15px 20px;
+        width: 100%;
+    }
+    
+    
+    
+}
+
+
+
+/* Additional Small Screen Enhancements */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-purple {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    /* Modal form adjustments */
+    .modal-body {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    .table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Make each row take full width */
+    .table tr {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 8px 5px;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #6a11cb;
+    }
+
+    /* Button adjustments */
+    .btn-purple {
+        font-size: 1rem;
+        padding: 15px 20px;
+        width: 100%;
+    }
+    
+    
+    
+}

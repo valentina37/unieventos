@@ -1,0 +1,12 @@
+body {
+    font-family: "Dosis", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.fondoNavbar {
+    background-color: #6a11cb;
+}
