@@ -4,7 +4,7 @@
         // "Credenciales" de conexión
         public $servidor = '54.162.12.56';
         public $usuario = 'root';
-        public $password = '';
+        public $password = 'jodahezo27?';
         public $database = 'unieventos';
         public $port = 3306;
         // 
