@@ -91,6 +91,9 @@
                 <button class="btn btn-purple" onclick="location.href='generarQR.php'">
                     Descargar Entrada
                 </button>
+                <button class="btn btn-purple" onclick="location.href='marcarAsistencia.php'">
+                    Marcar Asistencia
+                </button>
                 <button class="btn btn-purple" onclick="location.href='descargarCertificado.php'">
                     Descargar Certificado
                 </button>
