@@ -2,7 +2,7 @@
     class Conexion {
 
         // "Credenciales" de conexión
-        public $servidor = '172.31.95.111';
+        public $servidor = 'unieventos.chyqgm60qwri.us-east-1.rds.amazonaws.com';
         public $usuario = 'root';
         public $password = 'jodahezo27?';
         public $database = 'unieventos';
